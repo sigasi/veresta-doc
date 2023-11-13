@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.sigasi.hdt.vhdl.scoping.librarymapping.model:LibraryMappings xmlns:com.sigasi.hdt.vhdl.scoping.librarymapping.model="com.sigasi.hdt.vhdl.scoping.librarymapping" Version="2">
+  <Mappings Location="" Library="not mapped"/>
+  <Mappings Location="/" Library="not mapped"/>
+  <Mappings Location="Common Libraries" Library="not mapped"/>
+  <Mappings Location="Common Libraries/IEEE" Library="ieee"/>
+  <Mappings Location="Common Libraries/IEEE Synopsys" Library="ieee"/>
+  <Mappings Location="Common Libraries/STD" Library="std"/>
+  <Mappings Location="drive_rst_start.vhd" Library="work"/>
+  <Mappings Location="ram.sv" Library="work"/>
+  <Mappings Location="step_1_dut_core.sv" Library="work"/>
+  <Mappings Location="step_2_dut_top.sv" Library="work"/>
+  <Mappings Location="step_3_pixelbuffer.sv" Library="work"/>
+  <Mappings Location="step_4_pixel_testbench.sv" Library="work"/>
+  <Mappings Location="step_5_dut_engine.sv" Library="work"/>
+  <Mappings Location="step_6_image_testbench.sv" Library="work"/>
+</com.sigasi.hdt.vhdl.scoping.librarymapping.model:LibraryMappings>
