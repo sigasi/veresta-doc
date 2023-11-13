@@ -2,13 +2,13 @@
 image: registry.gitlab.com/sigasi/public/veresta-ci:5.3.2
 pages:
   script:
-    - veresta document --verbose --include-problems `pwd`/design
+    - SIGASI_LM_LICENSE_FILE=27040@elvis veresta document --verbose --include-problems `pwd`/design
     - mv design/sigasi-doc public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
       - public
-  # rules:
-  #   # This ensures that only pushes to the default branch will trigger
-  #   # a pages deploy
-  #   - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
