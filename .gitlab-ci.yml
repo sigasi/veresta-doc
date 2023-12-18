@@ -4,7 +4,7 @@ pages:
   script:
     - SIGASI_LM_LICENSE_FILE=27040@elvis veresta document --diagrams=NONE `pwd`/design
     - mv design/sigasi-doc public
-    - mn public/documentation.html public/index.html
+    - mv public/documentation.html public/index.html
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
