@@ -1,8 +1,9 @@
 # The Docker image that will be used to build your app
-image: registry.gitlab.com/sigasi/public/veresta-ci:rocky-5.3.2
+image: registry.gitlab.com/sigasi/public/veresta-ci:rocky-5.4.0
 pages:
   script:
-    - SIGASI_LM_LICENSE_FILE=27040@elvis veresta document --diagrams=NONE `pwd`/design
+    - export SIGASI_LM_LICENSE_FILE=27040@elvis
+    - xvfb-run veresta document `pwd`/design
     - mv design/sigasi-doc public
     - mv public/documentation.html public/index.html
   artifacts:
